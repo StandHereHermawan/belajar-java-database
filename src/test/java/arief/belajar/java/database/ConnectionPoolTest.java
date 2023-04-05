@@ -33,4 +33,9 @@ public class ConnectionPoolTest {
             Assertions.fail(exception);
         }
     }
+
+    @Test
+    void testConnectionUtil() throws SQLException {
+        Connection connection = ConnectionUtil.getDataSource().getConnection();
+    }
 }
