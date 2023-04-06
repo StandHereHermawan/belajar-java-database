@@ -29,7 +29,8 @@ public class StatementTest {
                 INSERT INTO customers(id, name, email)
                 VALUES  ('hermawan','Hermawan','Hermawan@test.com'),
                         ('karditya','Karditya','karditya@test.com'),
-                        ('arief','Arief','arief@test.com')
+                        ('arief','Arief','arief@test.com'),
+                        ('hilmi','Hilmi','hilmi@test.com')
                 """;
         int update = statement.executeUpdate(sql);
         System.out.println(update);
