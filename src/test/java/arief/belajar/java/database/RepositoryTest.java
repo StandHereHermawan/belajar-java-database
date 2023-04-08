@@ -44,4 +44,10 @@ public class RepositoryTest {
         List<Comment> comments = commentRepository.findAll();
         System.out.println(comments.size());
     }
+
+    @Test
+    void testFindByEmail() {
+        List<Comment> comments = commentRepository.findAllByEmail("arief@test");
+        System.out.println(comments.size());
+    }
 }
